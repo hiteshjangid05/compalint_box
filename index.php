@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 //Step1
- $db = mysqli_connect('localhost','root','science2012','clean')
+ $db = mysqli_connect('localhost','root','pass','repository')
  or die('Error connecting to MySQL server.');
 ?>
 <html>
@@ -157,7 +157,7 @@ function test_input($data) {
       <ul class="nav navbar-nav  navbar-right">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
-        <li><a href="#">Complaint </a></li>
+        <li><a href="#">All Complaint</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
 
@@ -180,24 +180,24 @@ function test_input($data) {
      <div class="item active">
        <img src="https://4.bp.blogspot.com/-WgHsZGl2hjA/Vs_lkrJtX-I/AAAAAAAABF8/lw9r3BXNBnI/s1600/banega-swachh-india.jpg" alt="Los Angeles" style="width:100%;">
        <div class="carousel-caption">
-         <h3>Los Angeles</h3>
-         <p>LA is always so much fun!</p>
+         <h3></h3>
+         <p></p>
        </div>
      </div>
 
      <div class="item">
        <img src="http://www.india.com/wp-content/uploads/2017/01/Swachh-Bharat-Abhiyan-gandhi.jpg" alt="Chicago" style="width:100%;">
        <div class="carousel-caption">
-         <h3>Chicago</h3>
-         <p>Thank you, Chicago!</p>
+         <h3></h3>
+         <p></p>
        </div>
      </div>
 
      <div class="item">
        <img src="https://4.bp.blogspot.com/-D3T-g90YLxQ/VDONYmPbnWI/AAAAAAAAFG8/tgyS7jcvzHY/s1600/Final-Swachh-bharat-MIB-Google%2B-Coverpage.jpg" alt="New York" style="width:100%;">
        <div class="carousel-caption">
-         <h3>New York</h3>
-         <p>We love the Big Apple!</p>
+         <h3></h3>
+         <p></p>
        </div>
      </div>
 
@@ -323,12 +323,10 @@ function test_input($data) {
    </form>
    <?php
    $query = "SELECT * FROM Data" ;
- mysqli_query($db, $query) or die('Error querying database.');
-   echo $query;
-
-   ?>
+   mysqli_query($db, $query) or die('Error querying database.');
+   echo ;
+	?>
 
 </div>
-
 </body>
 </html>
